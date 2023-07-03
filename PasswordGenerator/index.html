@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="skeleton.css">
+        <link rel="icon" href= "lock.png">
+
+        <title>Password Generator</title>
+
+        <meta charset="utf-8">
+        
+       <script src = "PasswordGenerator.js"></script>
+
+
+    </head>
+    <body>
+        <div class = "container">
+
+            <h1>Password Generator</h1>
+
+            <label>Password Length</label>
+            <input type="text" id="pLength" autofocus><br>
+
+            <label>Contain Upper Case Letters</label>
+            <input type="checkbox" id="uppercase" checked>
+
+            <label>Contain Lower Case Letters</label>
+            <input type="checkbox" id="lowercase" checked>
+
+            <label>Contain Numbers</label>
+            <input type="checkbox" id="numbers" checked>
+
+            <label>Contain Symbols</label>
+            <input type="checkbox" id="symbols" checked><br>
+
+            <button class = "button-primary" id="genpassword" value="generatePassword" onclick="generatePassword()">Generate Password</button>
+            <button class = "button-primary" id="clear" value="clearFields" onclick="clearfields()">Clear</button>
+
+            <h2 id="output"></h2>
+
+        </div>
+        
+    </body>
+</html>
